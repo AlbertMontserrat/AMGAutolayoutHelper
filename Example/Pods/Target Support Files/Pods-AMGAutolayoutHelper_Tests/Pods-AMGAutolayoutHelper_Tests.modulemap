@@ -1,0 +1,6 @@
+framework module Pods_AMGAutolayoutHelper_Tests {
+  umbrella header "Pods-AMGAutolayoutHelper_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

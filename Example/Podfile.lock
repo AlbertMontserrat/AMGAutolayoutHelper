@@ -1,0 +1,16 @@
+PODS:
+  - AMGAutolayoutHelper (1.0)
+
+DEPENDENCIES:
+  - AMGAutolayoutHelper (from `../`)
+
+EXTERNAL SOURCES:
+  AMGAutolayoutHelper:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AMGAutolayoutHelper: 39d088c60e907c5521ef24dd63e28bb70bf93247
+
+PODFILE CHECKSUM: 360e284c273181c46ec2106e5ee8677d64783b0c
+
+COCOAPODS: 1.2.0

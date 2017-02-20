@@ -30,8 +30,8 @@
 /* Begin PBXFileReference section */
 		0196A06083C9831B20895035 /* Pods-AMGAutolayoutHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMGAutolayoutHelper_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMGAutolayoutHelper_Example/Pods-AMGAutolayoutHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		02F968602D259A7AEBD9F763 /* Pods_AMGAutolayoutHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMGAutolayoutHelper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A0D4EC40A6CBF03E9685A55 /* AMGAutolayoutHelper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AMGAutolayoutHelper.podspec; path = ../AMGAutolayoutHelper.podspec; sourceTree = "<group>"; };
-		28F36A1536C72B668A42254D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0A0D4EC40A6CBF03E9685A55 /* AMGAutolayoutHelper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AMGAutolayoutHelper.podspec; path = ../AMGAutolayoutHelper.podspec; sourceTree = "<group>"; };
+		28F36A1536C72B668A42254D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AMGAutolayoutHelper_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMGAutolayoutHelper_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6B9393CE07DAC02EA81932CD /* Pods-AMGAutolayoutHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMGAutolayoutHelper_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMGAutolayoutHelper_Tests/Pods-AMGAutolayoutHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A6BFA5119ACEB3F2D6E5169F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A6BFA5119ACEB3F2D6E5169F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A9A44137DF21A0445B24C321 /* Pods_AMGAutolayoutHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMGAutolayoutHelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1A73AE381BC3473428F171 /* Pods-AMGAutolayoutHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMGAutolayoutHelper_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMGAutolayoutHelper_Example/Pods-AMGAutolayoutHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D5F6E536CF476664B443D6CA /* Pods-AMGAutolayoutHelper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMGAutolayoutHelper_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMGAutolayoutHelper_Tests/Pods-AMGAutolayoutHelper_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -215,9 +215,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -494,6 +496,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -507,6 +510,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -526,6 +530,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -541,6 +546,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
