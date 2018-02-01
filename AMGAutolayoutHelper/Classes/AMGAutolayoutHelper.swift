@@ -9,19 +9,19 @@
 import Foundation
 
 public class AMGAutolayoutHelper : NSObject {
-    
+
     //Default size to iPhone 6 screen resolution
     public var defaultWidth: CGFloat = 375.0
     public var defaultHeight: CGFloat = 667.0
-    
+
     public enum Axis : String {
         case horizontal = "horizontal"
         case vertical = "vertical"
         case both = "both"
     }
-    
+
     public static let shared = AMGAutolayoutHelper()
-    
+
     public func convertSize(size: CGFloat, axis: Axis = .horizontal, original: CGFloat? = nil, final: CGFloat? = nil) -> CGFloat {
         let o = original ?? {
             switch axis {
@@ -30,9 +30,9 @@ public class AMGAutolayoutHelper : NSObject {
             case .vertical:
                 return defaultHeight
             case .both:
-                return defaultWidth / defaultHeight
+                return defaultHeight / defaultWidth
             }
-        }()
+            }()
 
         let f = final ?? {
             let screenSize = UIScreen.main.bounds.size
@@ -42,12 +42,13 @@ public class AMGAutolayoutHelper : NSObject {
             case .vertical:
                 return screenSize.height
             case .both:
-                return screenSize.width / screenSize.height
+                return screenSize.height / screenSize.width
             }
-        }()
+            }()
 
         return CGFloat(Int((f * size) / o));
     }
 
-    
+
 }
+
