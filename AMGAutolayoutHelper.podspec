@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AMGAutolayoutHelper'
-  s.version          = '1.0'
+  s.version          = '1.1'
   s.summary          = 'Autolayout UI subclases to automatically adapt font sizes'
   s.description      = <<-DESC
 This library add support to autolayout font sizes directly from Inspector Builder. Just configure the default width and height of the AMGAutolayoutHelper singleton and change the UI elements to the corresponding AMGAutolayout.

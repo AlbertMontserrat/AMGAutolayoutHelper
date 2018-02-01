@@ -17,21 +17,36 @@ public class AMGAutolayoutHelper : NSObject {
     public enum Axis : String {
         case horizontal = "horizontal"
         case vertical = "vertical"
+        case both = "both"
     }
     
     public static let shared = AMGAutolayoutHelper()
     
-    public func convertSize(size: CGFloat, axis: Axis = .horizontal) -> CGFloat {
-        let screenSize = UIScreen.main.bounds.size
-        if axis == .horizontal {
-            return convertSize(size: size, axis: axis, original: defaultWidth, final: screenSize.width)
-        } else {
-            return convertSize(size: size, axis: axis, original: defaultHeight, final: screenSize.height)
-        }
-    }
-    
-    public func convertSize(size: CGFloat, axis: Axis, original: CGFloat, final: CGFloat) -> CGFloat {
-        return CGFloat(Int((final * size) / original));
+    public func convertSize(size: CGFloat, axis: Axis = .horizontal, original: CGFloat? = nil, final: CGFloat? = nil) -> CGFloat {
+        let o = original ?? {
+            switch axis {
+            case .horizontal:
+                return defaultWidth
+            case .vertical:
+                return defaultHeight
+            case .both:
+                return defaultWidth / defaultHeight
+            }
+        }()
+
+        let f = final ?? {
+            let screenSize = UIScreen.main.bounds.size
+            switch axis {
+            case .horizontal:
+                return screenSize.width
+            case .vertical:
+                return screenSize.height
+            case .both:
+                return screenSize.width / screenSize.height
+            }
+        }()
+
+        return CGFloat(Int((f * size) / o));
     }
 
     
